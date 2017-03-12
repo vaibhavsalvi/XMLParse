@@ -1,0 +1,10 @@
+<reportjob>
+<report>
+	<reportname>A</reportname>
+        <reportid>1</reportid>
+</report>
+<report>
+	<reportname>B</reportname>
+        <reportid>2</reportid>
+</report>
+</reportjob>
