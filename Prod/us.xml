@@ -1,0 +1,14 @@
+<reportjob>
+<report>
+	<reportname>A</reportname>
+        <reportid>1</reportid>
+	<filepath>a/Operations/z</filepath>
+        <filename>us_operarions<filename>
+</report>
+<report>
+	<reportname>B</reportname>
+        <reportid>2</reportid>
+	<filepath>a/Risk/z</filepath>
+	<filename>us_risk2<filename>
+</report>
+</reportjob>
