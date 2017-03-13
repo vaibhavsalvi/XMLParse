@@ -3,12 +3,12 @@
 	<reportname>A</reportname>
         <reportid>1</reportid>
 	<filepath>Operations</filepath>
-        <filename>us_operarions<filename>
+        <filename>asia_operarions</filename>
 </report>
 <report>
 	<reportname>B</reportname>
         <reportid>2</reportid>
 	<filepath>Risk</filepath>
-	<filename>us_risk2<filename>
+	<filename>asia_risk1</filename>
 </report>
 </reportjob>

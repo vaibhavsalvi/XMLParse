@@ -8,7 +8,7 @@ fs.readFile('input.txt', function (err, data) {
     if (err) {
         return console.error(err);
     }
-    console.log("Asynchronous read: " + data.toString());
+    //console.log("Asynchronous read: " + data.toString());
     firstFile = data.toString();
 });
 
@@ -20,9 +20,9 @@ fs.readFile('input1.txt', function (err, data) {
     console.log("Asynchronous read: " + data.toString());
     secondFile = data.toString();
     var parser = xmlParser.Parser();
-
+ console.log(parser);
     parser.parseString(secondFile, function (err, data) {
-        //console.log(data);
+        console.log(data);
         for (i = 0; i < data.reportjob.report.length; i++) {
             console.log(data.reportjob.report[i].reportname);
         }

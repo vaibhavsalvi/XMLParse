@@ -2,13 +2,13 @@
 <report>
 	<reportname>A</reportname>
         <reportid>1</reportid>
-	<filepath>a/Operations/z</filepath>
+	<filepath>Operations</filepath>
         <filename>asia_operarions<filename>
 </report>
 <report>
 	<reportname>B</reportname>
         <reportid>2</reportid>
-	<filepath>a/Risk/z</filepath>
+	<filepath>Risk</filepath>
 	<filename>asia_risk1<filename>
 </report>
 </reportjob>
