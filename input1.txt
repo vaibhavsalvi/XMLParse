@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <reportjob>
   <report>
-    <reportname>Changed</reportname>
+    <reportname>TempOperations</reportname>
     <reportid>1</reportid>
   </report>
   <report>
-    <reportname>Changed</reportname>
+    <reportname>TempOperations</reportname>
     <reportid>2</reportid>
   </report>
 </reportjob>

@@ -53,13 +53,43 @@ app.get('/Operations/', function (req, res) {
     
 
 app.get('/Global', function (req, res) {
-    if (usfile == usprodfile)
-        res.send("US files match");
+    if (asiaprodfile == usprodfile)
+        res.send("These are global files");
 })
 
 app.get('/Modify', function (req, res) {
-    if (usfile == usprodfile)
-        res.send("US files match");
+     // Asynchronous read
+fs.readFile('input1.txt', function (err, data) {
+    if (err) {
+        return console.error(err);
+    }
+    console.log("Asynchronous read: " + data.toString());
+    originalFile = data.toString();
+    var parser = xmlParser.Parser();
+ console.log(originalFile);
+    parser.parseString(originalFile, function (err, data) {
+        console.log(data);
+        for (i = 0; i < data.reportjob.report.length; i++) {
+            console.log(data.reportjob.report[i].reportname);
+        }
+        
+        for (i = 0; i < data.reportjob.report.length; i++) {
+
+            data.reportjob.report[i].reportname = "TempOperations";
+        }
+
+        var obj = data;
+
+        var builder = new xmlParser.Builder();
+        var xmltext = builder.buildObject(obj);
+        fs.writeFile('input1.txt', xmltext, function (err) {
+            if (err) {
+                return console.error(err);
+            }
+            res.send('Modified file input1.txt')
+        });
+    });
+});
 })
 
 app.listen(3000, function () {
